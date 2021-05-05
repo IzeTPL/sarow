@@ -1,0 +1,24 @@
+[package]
+name = "sarow-server"
+version = "0.1.0"
+authors = ["IzeTPL"]
+edition = "2018"
+license = "GNU General Public License"
+repository = "https://github.com/IzeTPL/sarow"
+
+[dependencies]
+tokio = { version = "1.4.0", features = ["macros", "rt-multi-thread", "fs", "time"] }
+warp = "0.3.1"
+reqwest = "0.11.3"
+futures = { version = "=0.3.14", default-features = false }
+bytes = "1.0.1"
+log = "0.4.14"
+env_logger = "0.8.3"
+config = { version = "0.11.0", features = ["toml"] }
+serde = { version = "1.0.125", features = ["derive"] }
+byte-unit = { version = "4.0.10", features = ["serde"], default-features = false }
+chrono = { version = "0.4.19", features = ["serde"] }
+chrono-tz = { version = "0.5.3", features = ["serde"] }
+humantime = "2.1.0"
+humantime-serde = "1.0.1"
+base64 = "0.13.0"

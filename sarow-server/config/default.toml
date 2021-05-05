@@ -1,0 +1,7 @@
+ip = "0.0.0.0"
+port = 8080
+log_level = "info,sarow=debug"
+work_dir = "."
+max_size = "5MiB"
+max_file_age = "7d"
+clean_interval = "1s"
